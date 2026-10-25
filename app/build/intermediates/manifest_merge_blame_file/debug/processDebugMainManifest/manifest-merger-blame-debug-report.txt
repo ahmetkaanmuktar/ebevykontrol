@@ -1,0 +1,265 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ahmetkaan.uygulamakapatma"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Kullanım istatistiklerine erişim izni (Uygulama ekran sürelerini ölçmek için) -->
+12    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+12-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:6:5-8:47
+12-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:7:9-62
+13
+14    <!-- Diğer uygulamaların üzerinde gösterim izni (Süre dolduğunda engelleme ekranını göstermek için) -->
+15    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+15-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:11:5-78
+15-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:11:22-75
+16
+17    <!-- Önyükleme tamamlandığında izleme servisini ve alarmları kontrol etme izni -->
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:14:5-81
+18-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:14:22-78
+19
+20    <!-- Android 13+ (API 33+) Yerel Bildirim İzni -->
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:17:5-77
+21-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:17:22-74
+22
+23    <!-- Ebeveyn için Biyometrik (Parmak İzi / Yüz Tanıma) İzni -->
+24    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+24-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:20:5-72
+24-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:20:22-69
+25
+26    <!-- Google Play Uyumlu: QUERY_ALL_PACKAGES yerine yalnızca başlatılabilir (Launcher) uygulamaları sorgulama -->
+27    <queries>
+27-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:23:5-28:15
+28        <intent>
+28-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:24:9-27:18
+29            <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:25:13-65
+29-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:25:21-62
+30
+31            <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:26:13-73
+31-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:26:23-70
+32        </intent>
+33    </queries>
+34
+35    <!-- suppress DeprecatedClassUsageInspection -->
+36    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+36-->[androidx.biometric:biometric:1.1.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\5033a857e7f5e3b8c43ffe6f0dca4b62\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+36-->[androidx.biometric:biometric:1.1.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\5033a857e7f5e3b8c43ffe6f0dca4b62\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+37
+38    <permission
+38-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+39        android:name="com.ahmetkaan.uygulamakapatma.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+39-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+40        android:protectionLevel="signature" />
+40-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+41
+42    <uses-permission android:name="com.ahmetkaan.uygulamakapatma.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+42-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+42-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+43
+44    <application
+44-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:30:5-86:19
+45        android:name="com.ahmetkaan.uygulamakapatma.ParentalControlApp"
+45-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:31:9-43
+46        android:allowBackup="false"
+46-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:32:9-36
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.15.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\81451abbf25e39efe69bb17397fa5bc5\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+48        android:dataExtractionRules="@xml/data_extraction_rules"
+48-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:33:9-65
+49        android:debuggable="true"
+50        android:extractNativeLibs="false"
+51        android:fullBackupContent="@xml/backup_rules"
+51-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:34:9-54
+52        android:icon="@mipmap/ic_launcher"
+52-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:35:9-43
+53        android:label="@string/app_name"
+53-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:36:9-41
+54        android:supportsRtl="true"
+54-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:37:9-35
+55        android:theme="@style/Theme.UygulamaKapatma" >
+55-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:38:9-53
+56        <activity
+56-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:41:9-49:20
+57            android:name="com.ahmetkaan.uygulamakapatma.MainActivity"
+57-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:42:13-41
+58            android:exported="true"
+58-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:43:13-36
+59            android:theme="@style/Theme.UygulamaKapatma" >
+59-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:44:13-57
+60            <intent-filter>
+60-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:45:13-48:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:25:13-65
+61-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:25:21-62
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:26:13-73
+63-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:26:23-70
+64            </intent-filter>
+65        </activity>
+66
+67        <!-- Süre dolduğunda beliren kilit ekranı -->
+68        <activity
+68-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:52:9-59:60
+69            android:name="com.ahmetkaan.uygulamakapatma.ui.block.BlockOverlayActivity"
+69-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:53:13-58
+70            android:excludeFromRecents="true"
+70-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:56:13-46
+71            android:exported="false"
+71-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:54:13-37
+72            android:launchMode="singleInstance"
+72-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:55:13-48
+73            android:showWhenLocked="true"
+73-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:57:13-42
+74            android:theme="@style/Theme.UygulamaKapatma"
+74-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:59:13-57
+75            android:turnScreenOn="true" />
+75-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:58:13-40
+76
+77        <!-- Erişilebilirlik Servisi (Ön plandaki uygulamanın süresini denetlemek için) -->
+78        <service
+78-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:62:9-72:19
+79            android:name="com.ahmetkaan.uygulamakapatma.service.AppBlockerAccessibilityService"
+79-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:63:13-67
+80            android:exported="false"
+80-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:64:13-37
+81            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+81-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:65:13-79
+82            <intent-filter>
+82-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:66:13-68:29
+83                <action android:name="android.accessibilityservice.AccessibilityService" />
+83-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:67:17-92
+83-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:67:25-89
+84            </intent-filter>
+85
+86            <meta-data
+86-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:69:13-71:72
+87                android:name="android.accessibilityservice"
+87-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:70:17-60
+88                android:resource="@xml/accessibility_service_config" />
+88-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:71:17-69
+89        </service>
+90
+91        <!-- Cihaz açılışını, güncelleme ve saat değişimini yakalayan alıcı -->
+92        <receiver
+92-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:75:9-84:20
+93            android:name="com.ahmetkaan.uygulamakapatma.receiver.BootReceiver"
+93-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:76:13-50
+94            android:exported="true" >
+94-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:77:13-36
+95            <intent-filter>
+95-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:78:13-83:29
+96                <action android:name="android.intent.action.BOOT_COMPLETED" />
+96-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:79:17-79
+96-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:79:25-76
+97                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+97-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:80:17-84
+97-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:80:25-81
+98                <action android:name="android.intent.action.TIME_SET" />
+98-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:81:17-73
+98-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:81:25-70
+99                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+99-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:82:17-81
+99-->C:\Users\AHMET KAAN\Desktop\uygulamakapatma\app\src\main\AndroidManifest.xml:82:25-78
+100            </intent-filter>
+101        </receiver>
+102
+103        <activity
+103-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\75dac1cc811040b2dab5aa0a51374f9c\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+104            android:name="androidx.compose.ui.tooling.PreviewActivity"
+104-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\75dac1cc811040b2dab5aa0a51374f9c\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+105            android:exported="true" />
+105-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\75dac1cc811040b2dab5aa0a51374f9c\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+106
+107        <provider
+107-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+108            android:name="androidx.startup.InitializationProvider"
+108-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+109            android:authorities="com.ahmetkaan.uygulamakapatma.androidx-startup"
+109-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+110            android:exported="false" >
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+111            <meta-data
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+112                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+113                android:value="androidx.startup" />
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\4b037b75e987f1483ce8e9fdf16c8822\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+114            <meta-data
+114-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\dc6b5ce14a850cce4b1f57146ae2b443\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+115-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\dc6b5ce14a850cce4b1f57146ae2b443\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+116                android:value="androidx.startup" />
+116-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\dc6b5ce14a850cce4b1f57146ae2b443\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+117            <meta-data
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+118                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+119                android:value="androidx.startup" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+120        </provider>
+121
+122        <activity
+122-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\3e3e9f8df6e51cbbdeb836fee32c891d\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:23:9-25:39
+123            android:name="androidx.activity.ComponentActivity"
+123-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\3e3e9f8df6e51cbbdeb836fee32c891d\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:24:13-63
+124            android:exported="true" />
+124-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\3e3e9f8df6e51cbbdeb836fee32c891d\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:25:13-36
+125
+126        <service
+126-->[androidx.room:room-runtime:2.6.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\d410a34dac8c649dd564129b58296fc2\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+127            android:name="androidx.room.MultiInstanceInvalidationService"
+127-->[androidx.room:room-runtime:2.6.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\d410a34dac8c649dd564129b58296fc2\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+128            android:directBootAware="true"
+128-->[androidx.room:room-runtime:2.6.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\d410a34dac8c649dd564129b58296fc2\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+129            android:exported="false" />
+129-->[androidx.room:room-runtime:2.6.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\d410a34dac8c649dd564129b58296fc2\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+130
+131        <receiver
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+132            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+133            android:directBootAware="false"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+134            android:enabled="true"
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+135            android:exported="true"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+136            android:permission="android.permission.DUMP" >
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+138                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+141                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+144                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+147                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\AHMET KAAN\.gradle\caches\8.11.1\transforms\44e6145b3913cba3f8e8ef9e2f0cbcc2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+148            </intent-filter>
+149        </receiver>
+150    </application>
+151
+152</manifest>

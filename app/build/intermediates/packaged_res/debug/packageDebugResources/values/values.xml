@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">Bu servis, yalnızca çocuğunuzun ekran süresi sınırını aşan uygulamaları tespit etmek ve engelleme ekranını göstermek için ön plandaki uygulama paket adını denetler. Kişisel veriler, şifreler, mesajlar veya tuş vuruşları kesinlikle toplanmaz ve cihaz dışına aktarılmaz.</string>
+    <string name="action_continue">Devam Et</string>
+    <string name="action_grant">Etkinleştir</string>
+    <string name="app_description">Çocukların ekran süresini yönetmek için ebeveyn denetim ve süre sınırlama yardımcısı.</string>
+    <string name="app_name">Ebeveyn Denetimi</string>
+    <string name="blocked_ask_parent">Ebeveyninizden ek süre isteyin.</string>
+    <string name="blocked_desc">Bu uygulama için bugün belirlenen kullanım süresi dolmuştur.</string>
+    <string name="blocked_enter_pin_for_time">PIN Girerek 15 Dk Ekle</string>
+    <string name="blocked_title">Süre Sınırına Ulaşıldı!</string>
+    <string name="disclosure_accept">Anladım ve Kabul Ediyorum</string>
+    <string name="disclosure_accessibility_message">Ebeveyn Denetimi, belirlenen günlük süresi dolan uygulamaları anında tespit edebilmek için Android Erişilebilirlik Servisi API\'sini (AccessibilityService) kullanır.\n\n• Ne izlenir? Yalnızca o anda ekranda açılan uygulamanın paket adı.\n• Neler İZLENMEZ? Tuş vuruşları, mesajlar, şifreler, ekran görüntüleri veya kişisel bilgiler KESİNLİKLE izlenmez ve toplanmaz.\n• Amaç: Süresi dolan bir uygulama açıldığında engelleme ekranını göstermek.\n• Gizlilik: Hiçbir veri kaydedilmez ve cihaz dışına aktarılmaz.</string>
+    <string name="disclosure_accessibility_title">Erişilebilirlik Servisi Bildirimi</string>
+    <string name="disclosure_deny">Reddet</string>
+    <string name="disclosure_usage_message">Uygulamanın çalışabilmesi için telefonunuzdaki uygulamaların günlük kullanım sürelerini (PACKAGE_USAGE_STATS) okuması gerekir.\n\n• Ne toplanır? Yalnızca cihazdaki uygulamaların günlük kullanım dakikaları.\n• Amaç: Ebeveynin belirlediği süre sınırlarının aşılıp aşılmadığını hesaplamak.\n• Gizlilik: Bu veriler hiçbir zaman internete gönderilmez, sunuculara yüklenmez veya üçüncü taraflarla paylaşılmaz. Tamamen cihazınızda kalır.</string>
+    <string name="disclosure_usage_title">Kullanım Verilerine Erişim İzni</string>
+    <string name="perm_accessibility_desc">Süresi dolan uygulamayı anında algılayıp kapatabilmek için gereklidir.</string>
+    <string name="perm_accessibility_title">Erişilebilirlik Servisi</string>
+    <string name="perm_battery_desc">Servisin arka planda sistem tarafından sonlandırılmasını önler (Önerilen).</string>
+    <string name="perm_battery_title">Pil Optimizasyonu Muafiyeti</string>
+    <string name="perm_overlay_desc">Süre dolduğunda engelleme ekranını açabilmek için gereklidir.</string>
+    <string name="perm_overlay_title">Üzerinde Gösterme İzni</string>
+    <string name="perm_usage_desc">Günlük ekran süresini takip edebilmek için gereklidir.</string>
+    <string name="perm_usage_title">Kullanım İstatistikleri</string>
+    <string name="pin_error_incorrect">Hatalı PIN kodu! Kalan deneme: %1$d</string>
+    <string name="pin_forgot">PIN\'imi Unuttum</string>
+    <string name="pin_locked_out">Çok fazla hatalı deneme! Lütfen %1$d saniye bekleyin.</string>
+    <string name="pin_title_enter">Ebeveyn PIN\'ini Girin</string>
+    <string name="pin_title_setup">Ebeveyn PIN\'i Belirleyin</string>
+    <string name="security_answer_hint">Cevabınız</string>
+    <string name="security_question_prompt">Güvenlik Sorusu Seçin</string>
+    <string name="status_granted">Etkin</string>
+    <string name="status_not_granted">İzin Ver</string>
+    <style name="Theme.UygulamaKapatma" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

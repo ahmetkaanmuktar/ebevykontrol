@@ -1,0 +1,4 @@
+#Fri Oct 23 22:33:58 TRT 2026
+base.0=C\:\\Users\\AHMET KAAN\\Desktop\\uygulamakapatma\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

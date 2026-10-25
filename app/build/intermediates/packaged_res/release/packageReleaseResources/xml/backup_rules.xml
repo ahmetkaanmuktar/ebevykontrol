@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Eski Android sürümleri için yedekleme hariç tutma kuralları -->
+    <exclude domain="database" path="parental_control_db" />
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>
